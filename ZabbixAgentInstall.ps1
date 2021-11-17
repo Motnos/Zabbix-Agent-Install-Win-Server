@@ -52,7 +52,7 @@ $zabbixConfPath = 'Include='+$zabbixConfFile
 (Get-Content $zabbixConfFile) | ForEach-Object {
     $_.replace('Hostname=SetHostnameHere', $hostname).
     replace('Include=C:\Program Files\Zabbix Agent\zabbix_agentd.conf.d\',$zabbixConfPath)
-} | Out-File $zabbixConfFile
+} | Set-Content $zabbixConfFile
 
 Start-Service -Name 'Zabbix Agent' #Starts Zabbix Service
 
