@@ -1,0 +1,7 @@
+Create a folder here called
+
+Zabbix-Agent-Installer
+
+Inside create a version folder that matches the version you selected in the script
+
+Add the zabbix files (install and configure on one server manually first) then upload each indidual file from the installation directory into the version folder.
